@@ -9,7 +9,7 @@ const app = express();
 // --- PENGATURAN URL FRONTEND (PENTING) ---
 // Di Vercel nanti, tambahkan Environment Variable: FRONTEND_URL = https://link-web-kamu.vercel.app
 // Jika tidak ada, dia akan pakai localhost (untuk testing di laptop)
-const FRONTEND_BASE_URL = (process.env.FRONTEND_URL || "http://localhost:8080") + "/module";
+const FRONTEND_BASE_URL = (process.env.FRONTEND_URL || "https://tera-techcomfest.vercel.app") + "/module";
 
 // --- MIDDLEWARE (CORS UPDATE) ---
 // Kita izinkan semua origin (*) sementara agar saat lomba tidak ada error 'Blocked by CORS'
