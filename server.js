@@ -36,7 +36,7 @@ if (process.env.GEMINI_API_KEY) {
   try {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     // Catatan: Pastikan nama model benar. Biasanya 'gemini-1.5-flash' atau 'gemini-2.0-flash-exp'
-    geminiModel = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }); 
+    geminiModel = genAI.getGenerativeModel({ model: "gemini-2.5-flash" }); 
     console.log('✅ Gemini AI berhasil diinisialisasi');
   } catch (error) {
     console.error('❌ Gagal inisialisasi Gemini:', error.message);
